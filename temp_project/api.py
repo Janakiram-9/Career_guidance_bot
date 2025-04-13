@@ -7,9 +7,6 @@ app = Flask(__name__)
 # Set the OpenAI API key
 openai.api_key = "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"
 
-@app.route('/')
-def home():
-    return render_template('index.html')
 
 @app.route('/get-guidance', methods=['POST'])
 def get_guidance():
